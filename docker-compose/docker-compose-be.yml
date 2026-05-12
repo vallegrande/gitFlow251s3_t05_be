@@ -4,7 +4,7 @@ version: '3'
 
 services:
   backend:
-    image: juan321/springboot-sqlserver:1.0   # cambiar por tu usuario de dockerhub
+    image: juan321/springboot-sqlserver:3.0   # cambiar por tu usuario de dockerhub
     container_name: springboot-sqlserver
     ports:
       - "8085:8085"

@@ -17,12 +17,12 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 
 # CONSTRUIR UNA IMÁGEN MEDIANTE UN Dockerfile EN UNA CARPETA
-# docker build -t juan321/springboot-sqlserver:1.0 -f dockerfile-juan/Dockerfile .
+# docker build -t juan321/springboot-sqlserver:3.0 -f dockerfile-juan/Dockerfile .
 
 
 # EJECUTAR Y SUBIR TU IMÁGEN GENERADA A DOCKERHUB
-# docker run -d --name springboot-sqlserver -p 8085:8085 juan321/springboot-sqlserver:1.0
-# docker push juan321/springboot-sqlserver-usuario:1.0
+# docker run -d --name springboot-sqlserver -p 8085:8085 juan321/springboot-sqlserver:3.0
+# docker push juan321/springboot-sqlserver:3.0
 
 
 # DESCARGAR Y SUBIR MAVEN A TU USUARIO DOCKERHUB

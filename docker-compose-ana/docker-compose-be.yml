@@ -1,0 +1,25 @@
+# d 
+# docker-compose -f docker-compose-be.yml down
+version: '3'
+
+services:
+  backend:
+    image: anafelixmendoza21/springboot-sqlserver:1.0
+    container_name: springboot-sqlserver
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+      - DATABASE_URL=jdbc:sqlserver://sql-server:1433;databaseName=agro_pacayales;encrypt=true;trustServerCertificate=true
+      - DATABASE_USERNAME=sa
+      - DATABASE_PASSWORD=anafelix
+      - DATABASE_DRIVER=com.microsoft.sqlserver.jdbc.SQLServerDriver
+      - JPA_DDL_AUTO=update
+      - JPA_SHOW_SQL=false
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    external: true
+
